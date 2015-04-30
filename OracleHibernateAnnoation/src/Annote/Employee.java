@@ -18,12 +18,18 @@ public class Employee {
 	@Column(name = "FIRST_NAME")
 	private String firstName;
 
+	private String middleName;
+	
 	@Column(name = "LAST_NAME")
 	private String lastName;
 
 	@Column(name = "SALARY")
 	private int salary;
 
+	// FAKE_ATTRIBUTE is a attribute of the class... but will be ignored by hibernate.
+	@Transient 
+	private String FAKE_ATTRIBUTE;
+	
 	public Employee() {
 	}
 
@@ -57,6 +63,14 @@ public class Employee {
 		this.lastName = last_name;
 	}
 
+	public String getMiddleName() {
+		return middleName;
+	}
+
+	public void setMiddleName(String middle_name) {
+		this.middleName = middle_name;
+	}
+	
 	public int getSalary() {
 		return salary;
 	}
