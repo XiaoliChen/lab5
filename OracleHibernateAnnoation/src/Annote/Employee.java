@@ -27,7 +27,7 @@ public class Employee {
 	private int salary;
 
 	// FAKE_ATTRIBUTE is a attribute of the class... but will be ignored by hibernate.
-	@Transient 
+	@Transient
 	private String FAKE_ATTRIBUTE;
 	
 	public Employee() {
