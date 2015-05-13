@@ -7,11 +7,12 @@
 	<session-factory>
 		<property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
 		<property name="hibernate.default_schema">CISC181</property>
-		<property name="hibernate.connection.username">CISC181</property>
+		<property name="hibernate.connection.username">CHENX</property>
 		<property name="hibernate.connection.password">Section1</property>
-		<property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@cisc181.canrkwijj6g6.us-east-1.rds.amazonaws.com:1521:ORCL<</property>
 		<property name="show_sql">true</property>
 		<property name="format_sql">true</property>
 		<property name="hibernate.hbm2ddl.auto">update</property>
+		
 	</session-factory>
 </hibernate-configuration>
